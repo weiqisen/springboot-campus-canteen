@@ -1,8 +1,10 @@
 package cn.sise.dao;
 
 import cn.sise.pojo.Order_Msg;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
+@Mapper
 
 public interface Order_MsgMapper {
 

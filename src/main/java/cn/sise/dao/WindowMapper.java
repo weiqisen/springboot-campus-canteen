@@ -2,8 +2,10 @@ package cn.sise.dao;
 
 import cn.sise.pojo.Image;
 import cn.sise.pojo.Window;
+import org.apache.ibatis.annotations.Mapper;
 
 import java.util.List;
+@Mapper
 
 public interface WindowMapper {
     void updateById(Window window);

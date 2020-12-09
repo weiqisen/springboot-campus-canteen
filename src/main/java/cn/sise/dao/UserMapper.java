@@ -2,6 +2,7 @@ package cn.sise.dao;
 
 import cn.sise.pojo.Image;
 import cn.sise.pojo.User;
+import org.apache.ibatis.annotations.Mapper;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -9,7 +10,7 @@ import java.util.List;
 /**
  * user接口文件
  */
-@Repository
+@Mapper
 public interface UserMapper {
     /**
      * 根据Number查询用户信息

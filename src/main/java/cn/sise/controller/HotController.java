@@ -11,6 +11,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpSession;
 import java.text.ParseException;
@@ -22,7 +23,7 @@ import java.util.List;
 /**
  * 菜品热度模块
  */
-@Controller
+@RestController
 public class HotController {
     @Autowired
     private ProductService productService;

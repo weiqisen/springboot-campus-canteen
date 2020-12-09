@@ -9,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
@@ -32,7 +33,10 @@ public class LoginController {
         return "login";
     }
 
-
+    @RequestMapping("/test")
+    public String test(){
+        return "/test";
+    }
     @RequestMapping("/login")
     public String login(String number, String password, HttpSession session, Model model, HttpServletRequest request) {
         String myIp = request.getRemoteAddr();

@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpSession;
@@ -20,7 +21,7 @@ import java.util.List;
 /**
  * 失物发布Controller
  */
-@Controller
+@RestController
 public class LostController {
     @Autowired
     private LostService lostService;

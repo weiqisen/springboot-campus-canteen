@@ -1,6 +1,9 @@
 package cn.sise.dao;
 
 import cn.sise.pojo.Hot;
+import org.apache.ibatis.annotations.Mapper;
+
+@Mapper
 
 public interface HotMapper {
 
